@@ -15,15 +15,27 @@
 </head>
 <body>
 <h1>Política de Privacidade — Sudoku</h1>
-<p class="atualizado">Última atualização: 15 de setembro de 2026</p>
+<p class="atualizado">Última atualização: 8 de outubro de 2026</p>
 
 <p>Esta política descreve quais dados o aplicativo Sudoku ("o app"), desenvolvido por Paulo Carpinetti,
 coleta, como são usados e como você pode solicitar a exclusão deles.</p>
 
+<h2>Resumo</h2>
+<ul>
+  <li>Você pode jogar inteiramente sem conta. Seu progresso, suas estatísticas e suas preferências ficam
+    salvos no seu aparelho.</li>
+  <li>Com ou sem conta, o app usa serviços do Google para <strong>exibir anúncios</strong>, <strong>medir o uso
+    do app</strong> e <strong>relatar falhas técnicas</strong> (veja as seções abaixo).</li>
+  <li>Se você criar uma conta (opcional), seus dados de jogo são guardados na nuvem e seu nome de jogador e
+    suas melhores pontuações aparecem no <strong>ranking</strong>, visível para outros jogadores com conta.</li>
+  <li>Você pode excluir sua conta e todos os dados associados a qualquer momento.</li>
+</ul>
+
 <h2>Uso sem conta</h2>
-<p>Você pode jogar o app inteiramente offline, sem nunca criar uma conta. Nesse caso, nenhum dado seu é
-coletado ou enviado para fora do seu aparelho — o progresso da partida, as estatísticas e as preferências
-ficam salvos apenas localmente.</p>
+<p>Você pode jogar o app sem nunca criar uma conta. Nesse caso, o progresso da partida, as estatísticas e as
+preferências ficam salvos apenas no seu aparelho, e não enviamos esses dados de jogo para a nuvem. Mesmo sem
+conta, o app envia dados técnicos e de anúncios, descritos nas seções "Anúncios", "Medição de uso" e
+"Relatórios de falhas".</p>
 
 <h2>Dados coletados ao criar uma conta (opcional)</h2>
 <p>Criar uma conta é sempre opcional. Se você optar por criar uma conta (por e-mail/senha ou por login com
@@ -31,16 +43,25 @@ sua Conta Google, via Google Play Games Services), coletamos e armazenamos na nu
 <ul>
   <li><strong>Identificador da conta e e-mail</strong> — usados para autenticação (Firebase Authentication,
     da Google).</li>
+  <li><strong>Nome de jogador</strong> — um nome único que você escolhe, registrado para que não haja dois
+    jogadores com o mesmo nome.</li>
   <li><strong>Progresso da partida em andamento</strong> (se houver), para poder continuar de onde parou em
     outro aparelho.</li>
   <li><strong>Estatísticas de jogo</strong> — partidas jogadas, vitórias, derrotas, melhores pontuações por
     dificuldade, sequência de vitórias.</li>
   <li><strong>Preferências do app</strong> — tema (claro/escuro), exibição do cronômetro, tamanho de fonte.</li>
 </ul>
-<p>Esses dados são armazenados no Cloud Firestore (também da Google) e usados exclusivamente para
-sincronizar sua experiência de jogo entre aparelhos conectados à mesma conta. Não usamos esses dados para
-publicidade, não os vendemos e não os compartilhamos com terceiros além do provedor de infraestrutura
+<p>Esses dados são armazenados no Cloud Firestore (também da Google) e usados para sincronizar sua experiência
+de jogo entre aparelhos conectados à mesma conta e para o ranking descrito a seguir. Não usamos esses dados
+para publicidade, não os vendemos e não os compartilhamos com terceiros além do provedor de infraestrutura
 (Google Firebase), necessário para o funcionamento do serviço.</p>
+
+<h2>Ranking de jogadores</h2>
+<p>Se você tem uma conta, suas melhores pontuações por dificuldade, sua sequência de vitórias, seu número de
+vitórias e o seu <strong>nome de jogador</strong> são publicados em um ranking. Essas informações podem ser
+vistas por outros jogadores que também tenham conta. Seu e-mail <strong>não</strong> aparece no ranking. Jogadores
+sem conta não participam do ranking. Ao excluir a conta, sua entrada no ranking e o seu nome de jogador são
+apagados.</p>
 
 <h2>Anúncios</h2>
 <p>O app exibe anúncios por meio do Google AdMob, incluindo o Google User Messaging Platform (UMP) para
@@ -53,17 +74,34 @@ consentimento de anúncios personalizados. Para servir e medir anúncios, o AdMo
 </ul>
 <p>Antes de exibir qualquer anúncio, oferecemos a jogadores de regiões que exigem essa escolha (como o EEE e
 o Reino Unido) a opção de consentir ou recusar anúncios personalizados, por meio do UMP. Anúncios não são
-personalizados quando o consentimento é recusado ou ainda não obtido. O Google atua como processador desses
-dados conforme sua própria política de privacidade
+personalizados quando o consentimento é recusado ou ainda não obtido. Você também pode redefinir ou apagar o
+ID de publicidade nas configurações do Android. O Google atua como processador desses dados conforme sua
+própria política de privacidade
 (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>).</p>
 
+<h2>Medição de uso</h2>
+<p>O app usa o Firebase Analytics, da Google, para entender de forma agregada como o app é usado e melhorá-lo.
+Isso vale para todos os jogadores, com ou sem conta. O serviço pode coletar dados de uso do app (como abertura
+do app e telas visitadas), informações do aparelho (modelo, versão do Android, idioma e país) e um
+identificador da instalação do app. Não usamos esses dados para identificar você pessoalmente.</p>
+
+<h2>Relatórios de falhas</h2>
+<p>Para corrigir erros, o app usa o Firebase Crashlytics, da Google. Quando o app apresenta uma falha técnica,
+ele envia automaticamente, para todos os jogadores, com ou sem conta, um relatório com informações técnicas:
+modelo do aparelho, versão do Android, versão do app, estado do aparelho no momento da falha (como memória
+disponível) e o registro técnico do erro. Esses relatórios não contêm suas partidas, estatísticas, e-mail ou
+nome de jogador, e são usados apenas para diagnosticar e corrigir problemas.</p>
+
 <h2>Permissões do aparelho</h2>
-<p>O app solicita apenas acesso à internet, necessário para autenticação e sincronização com a nuvem quando
-você tem uma conta. Nenhuma outra permissão sensível (localização, câmera, contatos, etc.) é usada.</p>
+<p>O app usa acesso à internet e ao estado da conexão, necessários para anúncios, medição de uso, relatórios
+de falhas e, quando você tem uma conta, autenticação e sincronização com a nuvem. O app também declara o acesso
+ao ID de publicidade, usado pelos anúncios. Nenhuma outra permissão sensível (localização, câmera, microfone,
+contatos, armazenamento, etc.) é solicitada ou usada.</p>
 
 <h2>Exclusão de conta e dados</h2>
 <p>Você pode excluir permanentemente sua conta e todos os dados pessoais associados a ela a qualquer
-momento, de duas formas:</p>
+momento, de duas formas. A exclusão remove seu identificador e e-mail, seu nome de jogador, seu progresso,
+suas estatísticas, suas preferências e a sua entrada no ranking:</p>
 <ul>
   <li><strong>Dentro do app</strong>: Menu → Opções → Conta → "Excluir conta" (com confirmação explícita).</li>
   <li><strong>Fora do app</strong>, inclusive se você já desinstalou: acesse
@@ -71,7 +109,9 @@ momento, de duas formas:</p>
     <a href="mailto:pauloscarpinetti@gmail.com">pauloscarpinetti@gmail.com</a>.</li>
 </ul>
 <p>Solicitações pelo caminho externo são atendidas em até 30 dias. A exclusão é permanente e irreversível;
-progresso, estatísticas e preferências salvos apenas localmente no aparelho não são afetados.</p>
+progresso, estatísticas e preferências salvos apenas localmente no aparelho não são afetados. Os dados de
+anúncios, de medição de uso e de relatórios de falhas são mantidos pelo Google conforme seus próprios prazos e
+não ficam vinculados à sua conta no app.</p>
 
 <h2>Retenção de dados</h2>
 <p>Os dados de conta ficam armazenados enquanto sua conta existir, ou até que você solicite a exclusão por
@@ -82,8 +122,10 @@ qualquer um dos caminhos acima.</p>
 pelo e-mail abaixo.</p>
 
 <h2>Público infantil</h2>
-<p>O app é destinado ao público em geral e não coleta intencionalmente dados de crianças além do necessário
-para o funcionamento básico de uma conta opcional, nos mesmos termos descritos acima.</p>
+<p>O app é destinado ao público geral e não é direcionado a crianças menores de 13 anos. Não coletamos
+intencionalmente dados dessa faixa etária. Se um responsável perceber que uma criança criou uma conta, pode
+pedir a exclusão pelo e-mail abaixo ou pela <a href="/index.html">página de exclusão</a>, e apagaremos os
+dados.</p>
 
 <h2>Alterações nesta política</h2>
 <p>Esta política pode ser atualizada ocasionalmente para refletir mudanças no app. A data da última
